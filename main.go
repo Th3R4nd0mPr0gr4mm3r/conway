@@ -36,6 +36,7 @@ func main() {
 
 	conway := conway{}
 	menu := NewMenu(renderer)
+  defer menu.Unload()
 
 	var oldTimeStamp uint32 = 0
 
